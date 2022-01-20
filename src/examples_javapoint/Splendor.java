@@ -13,10 +13,12 @@ class Bike {
 
      public static void main(String[] args) {
 
-         Bike bike = new Splendor(); // Upcasting casting from subclass to superclass
-         bike.run();
+        Splendor s  = new Splendor();
+        Bike b = s; // Upcasting from sublcass to a superlcass
+         b.run();
 
-         Splendor splendor = new Splendor(); // Downcasting casting from superclass to subclass
-         splendor.run();
+         Bike bi = new Splendor();
+         Splendor sp = (Splendor) bi; // Downcasting from super class to a subclass
+         sp.run();
      }
 }
